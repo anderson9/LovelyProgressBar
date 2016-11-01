@@ -1,0 +1,12 @@
+<resources>
+
+
+    <attr name="textSize"        format="dimension" />
+    <attr name="lineWidth"       format="integer"/>
+    <attr name="lineColor"  format="color"/>
+    <declare-styleable name="LovelyProgressBar">
+        <attr name="textSize"         />
+        <attr name="lineWidth"      />
+        <attr name="lineColor"  />
+    </declare-styleable>
+</resources>

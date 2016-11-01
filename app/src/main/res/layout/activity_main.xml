@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dpv="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_primary_color"
+   >
+
+    <com.ljs.lovelyprogressbar.LovelyProgressBar
+        android:id="@+id/loadbar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        dpv:lineColor="@android:color/white"
+        dpv:lineWidth="8"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingTop="20dp"
+        android:layout_below="@id/loadbar">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BeginLoad"
+            android:id="@+id/load"
+            android:onClick="clickbt"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickbt"
+            android:id="@+id/err"
+            android:text="err"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickbt"
+            android:id="@+id/finish"
+            android:text="finish"/>
+    </LinearLayout>
+
+</RelativeLayout>
