@@ -8,7 +8,7 @@
 
 ```java
 dependencies {
-	
+	compile 'com.ljs:LovelyProgressBar:1.0.0'
 }
 ```
 
@@ -32,9 +32,9 @@ textsize默认：16sp
 ``` java
 LovelyProgressBar mbar=(LovelyProgressBar) findViewById(R.id.loadbar);;
 
-mbar.startload();
+mbar.startload();//设置progress前先startload（）
+mbar.setProgress(int progress);//设置进度
 
-mbar.setProgress(int progress);
 //加载成功调用即可成功动画
 mbar.errorLoad();
 //加载失败调用即可执行失败动画
